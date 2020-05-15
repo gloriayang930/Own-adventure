@@ -15,7 +15,7 @@ class TreeNode:
     print(story_node.story_piece)
     while len(story_node.choices) > 0:
       choice = input("Enter 1 or 2 to continue the story: \n")
-      if choice not in ["1","2"]:
+      if choice not in ["1","2"]: #此时的1，2是string！
         print("Please choose 1 or 2.")
       else:
         chosen_index = int(choice)
